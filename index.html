@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <p>Portfolio</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                <a href="#home" class="nav-link home">Home</a>
+                </li>
+                <li>
+                <a href="#about" class="nav-link about">About</a>
+                </li>
+                <li>
+                <a href="#skills" class="nav-link skills">Skills</a>
+                </li>
+                <li>
+                <a href="#projects" class="nav-link projects">Projects</a>
+                </li>
+                <li>
+                <a href="#contact" class="nav-link contact">Contact</a>
+                </li>
+                <li>
+                <a href="#" class="nav-link resume" id="resume-link-1">Resume</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <div id="user-detail-name">Your Name over Here!</div>
+            <div id="user-detail-intro">Your intro</div>
+            <img src="" alt="" class="home-img">
+            <button id="resume-button-2">Download Resume</button>
+        </section>
+
+        <section id="about" class="about section">
+            Your about over Here!
+        </section>
+
+        <section id="skills">
+            <div class="skills-card">
+                <img src="" alt="" class="skills-card-img">
+                <div class="skills-card-name">Skill card name</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="project-card">
+                <img src="" alt="">
+                <div class="project-title">Project Title</div>
+                <div class="project-description">Project Description</div>
+                <div class="project-tech-stack">Project Tech Stack</div>
+                <a href="" class="project-github-link">GitHub Repository</a>
+                <a href="" class="project-deployed-link">Deployed Link</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <a href="" id="contact-github">GitHub Profile</a>
+            <a href="" id="contact-linkedin">LinkedIn Profile</a>
+            <div id="contact-phone">+91-991199119911</div>
+            <div id="contact-email">Tatiyabichhu@gmail.com</div>
+        </section>
+        
+    </body>
 </html>
