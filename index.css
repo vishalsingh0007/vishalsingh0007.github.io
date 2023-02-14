@@ -549,7 +549,7 @@ section {
     background: #15151a;
 }
 
-#projects .carousel .card .box {
+#projects .carousel .card .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,7 +558,7 @@ section {
     transition: all 0.3s ease;
 }
 
-#projects .carousel .card:hover .box {
+#projects .carousel .card:hover .project-card {
     transform: scale(1.05);
 }
 
