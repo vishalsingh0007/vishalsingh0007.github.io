@@ -297,6 +297,7 @@ section {
 #skills {
     color: #A9ADB8;
     background: #ff1170;
+    ;
 }
 
 .skills h5 {
@@ -348,7 +349,9 @@ section {
 
 .skills-logo i {
     color: #ff1170;
-    width: 50px;
+    width: 70px;
+    /* height: 70px; */
+    font-size: 60px;
     margin-top: 20px;
 }
 
