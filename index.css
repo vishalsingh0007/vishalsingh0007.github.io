@@ -14,6 +14,27 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    max-width: 1300px;
+    padding: 0px 100px;
+    padding-bottom: 20px;
+    margin: auto;
+    z-index: 10;
+}
+
+.text-secondary {
+    color: #ff1170;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
 /* Scroll up styling */
 .scroll-up-btn {
     position: fixed;
@@ -156,4 +177,468 @@ html {
 .btn-md:hover {
     color: #ff1170;
     background: none;
+}
+
+.title::before {
+    content: '';
+    background: #07080B;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(44px);
+}
+
+.title::after {
+    content: '';
+    background: #07080B;
+    height: 7px;
+    width: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(1px);
+}
+
+
+#about {
+    background: #07080B;
+    /* height: 100%; */
+}
+
+.about .title::before {
+    background: #ff1170;
+}
+
+.about .title::after {
+    background: #ff1170;
+}
+
+.about h1 {
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.about h5 {
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+
+.about .about-content .column {
+    margin-top: 40px;
+}
+
+.about .about-content,
+.skills .skills-content,
+.skill-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-60px);
+}
+
+.about .about-content .left {
+    width: 55%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.about .about-content .left img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about .about-content .right {
+    width: 45%;
+    color: #A9ADB8;
+}
+
+.about .about-content .right .text {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p {
+    /* text-align: justify; */
+    width: 90%;
+}
+
+.about .about-content .right .text span {
+    color: #ff1170;
+}
+
+.about .about-content .right .table {
+    width: 500px;
+    padding: 10px 0;
+    margin-left: 0px;
+}
+
+.about .about-content .right .table td {
+    padding: 10px;
+}
+
+section {
+    padding: 40px 0;
+    /* background: #07080B; */
+}
+
+/* skills section styling */
+
+#skills {
+    color: #A9ADB8;
+    background: #ff1170;
+}
+
+.skills h5 {
+    font-weight: 700;
+    color: #07080B;
+    transform: translateY(-65px);
+}
+
+.skills h1 {
+    color: #07080B;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(23px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.skills .skills-content .main {
+    width: calc(20% - 0px);
+    min-height: 250px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.skills-card {
+    background: #07080B;
+    padding: 30px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px -15px #07080B;
+    transition: transform 0.8s;
+}
+
+.skills-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #07080B;
+    border: 18px solid #ff1170;
+    transform: transform 1s;
+}
+
+.skills-logo i {
+    color: #ff1170;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.skills-card h4 {
+    height: 28px;
+    width: 80%;
+    background: #07080B;
+    margin: 70px auto;
+    position: relative;
+}
+
+.skills-card h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #07080B, #ff1170);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.skills-card h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #ff1170, #07080B);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.skills-card:hover {
+    transform: translateY(-50px);
+}
+
+
+/* contact section */
+#contact {
+    background: black;
+}
+
+.contact h1 {
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.contact h5 {
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+
+.contact .title::before {
+    background: #ff1170;
+}
+
+.contact .title::after {
+    background: #ff1170;
+}
+
+.contact .contact-content .column {
+    margin-top: 40px;
+    /* padding: 20px; */
+    width: calc(50% - 50px);
+}
+
+.contact .contact-content .left h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #A9ADB8;
+}
+
+.contact .contact-content .left .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #A9ADB8;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.contact .contact-content .left .form-group textarea {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact .contact-content .left .btn-md {
+    padding: 8px 18px;
+    font-size: 16px;
+}
+
+.contact .contact-content .right {
+    color: #A9ADB8;
+}
+
+.contact .contact-content .right h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-content .right p {
+    line-height: 1.6;
+}
+
+.contact .contact-content .right .items {
+    margin: 10px 0;
+}
+
+.contact .contact-content .right .items .item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact .contact-content .right .items .item i {
+    padding: 16px;
+    border: 1px solid #A9ADB8;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact .contact-content .right .items .item span {
+    font-size: 14px;
+}
+
+.contact .contact-content .right .links {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.contact .contact-content .right .links li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 15px;
+}
+
+.contact .contact-content .right .links li a {
+    color: #A9ADB8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-content .right .links li a:hover {
+    color: #ff1170;
+}
+
+#footer {
+    text-align: center;
+    background: #ff1170;
+    padding: 30px 0;
+    color: #07080B;
+    font-weight: 700;
+}
+
+.project-github-link,
+.project-deployed-link {
+    color: #A9ADB8;
+}
+
+#projects {
+    color: #A9ADB8;
+    background: #ff1170;
+}
+
+#projects h5 {
+    font-weight: 700;
+    color: #07080B;
+    transform: translateY(-65px);
+}
+
+#projects h1 {
+    color: #07080B;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(23px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+#projects .carousel .card {
+    background: #07080B;
+    border-radius: 5px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#projects .carousel .card:hover {
+    background: #15151a;
+}
+
+#projects .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#projects .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+#projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+#projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff1170;
+    transition: all 0.3s ease;
+}
+
+#projects .carousel .card:hover img {
+    border-color: #fff;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background: #07080B !important;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #07080B;
+    transition: all 0.3s ease;
+}
+
+.react-activity-calendar {
+    margin-top: -6rem;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 100vh; */
+
+}
+
+.react-activity-calendar h1 {
+    color: #6e6e70;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(20px);
+    opacity: 0.1;
+    padding-top: -20px;
+}
+
+.react-activity-calendar h5 {
+    font-weight: 700;
+    transform: translateY(-65px);
+}
+
+.react-activity-calendar .title::before {
+    background: #ff1170;
+}
+
+.react-activity-calendar .title::after {
+    background: #ff1170;
+}
+
+
+#github-streak-stats {
+    margin-left: 6rem;
+}
+
+#github-top-langs {
+    margin-left: 22rem;
+}
+
+#github-stats-card {
+    margin-left: 44rem;
 }
