@@ -45,8 +45,9 @@
                     <a href="#react-activity-calendar" class="nav-link github">Github</a>
                 </li>
                 <li>
-                    <a href="./Vishal_singh_resume.pdf" class="nav-link resume" id="resume-link-1" attributes-list
-                        download>Resume</a>
+                    <button onclick="downloadResume()" class="nav-link resume" id="resume-button-1">Resume</button>
+                    <!-- <a href="./Vishal_singh_resume.pdf" class="nav-link resume" id="resume-link-1" attributes-list
+                        download>Resume</a> -->
                 </li>
             </ul>
         </nav>
@@ -271,8 +272,10 @@
                             <td>: Available</td>
                         </tr>
                     </table>
-                    <a href="./Vishal_singh_resume.pdf" class="btn-md" id="resume-link-2" attributes-list
-                        download>Download CV</a>
+                    <button onclick="downloadResume()" class="btn-md" id="resume-button-2">Resume</button>
+
+                    <!-- <a href="./Vishal_singh_resume.pdf" class="btn-md" id="resume-link-2" attributes-list
+                        download>Download CV</a> -->
                 </div>
             </div>
         </div>
@@ -454,7 +457,11 @@
     <footer id="footer">
         <p>&copy; 2023. Designed by Vishal Singh. All Rights Reserved.</p>
     </footer>
-
+    <script>
+        function downloadResume() {
+            window.open('https://export-download.canva.com/wIvSA/DAFY42wIvSA/124/0-47034842854.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20230215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230215T003809Z&X-Amz-Expires=37199&X-Amz-Signature=f3fea19bbde7c19b1941bbe7716807309bef6e98edeb01775711d7cb416704c5&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27VISHAL%2520SINGH.pdf&response-expires=Wed%2C%2015%20Feb%202023%2010%3A58%3A08%20GMT')
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
