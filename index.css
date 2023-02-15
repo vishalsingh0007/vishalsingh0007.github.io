@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 100%;
     padding: 0px 100px;
     padding-bottom: 20px;
     margin: auto;
@@ -645,3 +645,11 @@ section {
 #github-stats-card {
     margin-left: 44rem;
 }
+
+@media screen and (max-width: 768px) {}
+
+/* Use responsive images */
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
